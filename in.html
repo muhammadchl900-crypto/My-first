@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --card: #111;
+      --text: #e5e5e5;
+      --accent: #4f7cff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 90px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section {
+      margin: 60px 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+    .project:hover {
+      border-color: var(--accent);
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Programmer • Developer • Creator</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Write a clean, short description about yourself, your work,
+          and the technologies you use.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Clean description of your project and tech stack.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Clean description of your project and tech stack.</p>
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Clean description of your project and tech stack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: yourname@example.com</p>
+        <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
